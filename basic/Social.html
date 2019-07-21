@@ -3,6 +3,12 @@
 	<div class="card-block">
 		<h4 class="card-title">Social</h4>
 		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		<a href="#" class="btn btn-primary">Button</a>
+		<ul class="list-group">
+		    <li class="list-group-item text-xs-left" ng-repeat="aMail in data">
+		    	<b>Người gửi: </b><i>{{aMail.name}}</i>
+		    	<br>
+		    	<b>Content: </b><i>{{aMail.noidung}}</i>
+		    </li>
+		</ul>
 	</div>
 </div>
